@@ -1,0 +1,80 @@
+name: "\U0001F41B Bug Report"
+description: "Did things not work as expected?"
+labels:
+  - "status:triage"
+  - "bug"
+assignees:
+  - "ApacheTech"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing an issue 😄! Before you submit, please read the following:
+        
+        Search open/closed issues before submitting. Someone may have reported the same issue before.
+
+  - type: input
+    id: title
+    attributes:
+      label: "Issue Title"
+      description: "Provide a concise title for the issue."
+      placeholder: "fix: [what is the issue?] in [where is the issue?]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-report
+    attributes:
+      label: "\U0001F41B Bug Report"
+      description: "Provide a general summary of the issue here."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots-stacktrace
+    attributes:
+      label: "\U0001F4BB Screenshots / Stack Trace"
+      description: "Please provide steps to reproduce the issue and/or screenshots of the issue, or stack trace results."
+    validations:
+      required: false
+
+  - type: textarea
+    id: log-files
+    attributes:
+      label: "\U0001F30D Log Files"
+      description: |
+        ### DO NOT SKIP THIS STEP!
+        
+        This is important. Drag and drop your log files here. `%VINTAGE_STORY_DATA%\Logs`
+        
+        The best way to do this is to launch the game, log into your world, make it crash, and then zip your **__ENTIRE__** Logs folder, and drag it into this report. This will allow us to sift through the logs and see exactly what was happening at the time of the crash. Without a copy of your **__ENTIRE__** Logs folder, we cannot do anything to troubleshoot your issue.
+      placeholder: "Drag and drop your zip file here."
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: "Operating System"
+      description: "What OS are you using? (e.g. Windows, Mac, Linux)"
+      placeholder: "Windows"
+    validations:
+      required: true
+
+  - type: input
+    id: game-version
+    attributes:
+      label: "Game Version"
+      description: "What version of the game are you using? (e.g. v1.19.8)"
+      placeholder: "v1.19.8"
+    validations:
+      required: true
+
+  - type: input
+    id: mods-version
+    attributes:
+      label: "Mods Version"
+      description: "What version of the mods are you using? (e.g. v1.6.9)"
+      placeholder: "v1.6.9"
+    validations:
+      required: false
