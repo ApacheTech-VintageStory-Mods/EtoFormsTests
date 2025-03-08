@@ -1,4 +1,4 @@
-name: "\U0001F41B Bug Report"
+name: "\U0001F41B Bug Report Form"
 description: "Did things not work as expected?"
 labels:
   - "status:triage"
